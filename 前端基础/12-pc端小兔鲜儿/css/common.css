@@ -1,0 +1,361 @@
+/* 写头尾公共的样式 */
+
+/* 版心 */
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 字体图标引入 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?688a1l');
+    src: url('../fonts/icomoon.eot?688a1l#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?688a1l') format('truetype'),
+        url('../fonts/icomoon.woff?688a1l') format('woff'),
+        url('../fonts/icomoon.svg?688a1l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.iconfont {
+    font-family: 'icomoon';
+}
+
+/* 头部模块 */
+.xtx-shortcut {
+    height: 52px;
+    background-color: #333;
+    line-height: 52px;
+}
+
+.xtx-shortcut ul {
+    float: right;
+}
+
+.xtx-shortcut li {
+    float: left;
+    color: #666;
+}
+
+.xtx-shortcut li a {
+    color: #dcdcdc;
+}
+
+/* 小竖线 */
+.sep {
+    margin: 0 15px;
+}
+
+.xtx-shortcut li a:hover {
+    color: #fff;
+}
+
+/* 导航栏 */
+.xtx-main-nav {
+    padding: 30px 0;
+    height: 130px;
+}
+
+/* logo */
+.logo {
+    float: left;
+    width: 207px;
+    height: 70px;
+}
+
+.logo a {
+    display: block;
+    width: 207px;
+    height: 70px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 100%;
+    /* 小米隐藏文字方法 向左缩进，溢出的部分隐藏，但文字仍然存在*/
+    text-indent: -9999em;
+    overflow: hidden;
+    /* 京东方法： font-size: 0; */
+}
+
+.nav {
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.nav ul li {
+    float: left;
+    margin-right: 45px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+}
+
+.nav ul li a:hover {
+    /* 属性值无效！ */
+    /* border-bottom: lpx solid #27ba9b; */
+    border-bottom: 1px solid #27ba9b;
+    color: #27ba9b
+}
+
+.search {
+    float: left;
+    margin-top: 17px;
+}
+
+.search input {
+    width: 172px;
+    height: 38px;
+    padding-left: 5px;
+    border-bottom: 2px solid #e7e7e7;
+    font-family: 'icomoon';
+}
+
+.search input::placeholder {
+    color: #ccc
+}
+
+/* car */
+.car {
+    position: relative;
+    float: left;
+    width: 23px;
+    height: 23px;
+    margin: 35px 0 0 30px;
+    background-color: skyblue;
+    background: url(../images/sprites.png) no-repeat -119px -70px;
+}
+
+.car span {
+    position: absolute;
+    top: -6px;
+    left: 15px;
+    padding: 0 8px;
+    font-size: 13px;
+    color: #fff;
+    height: 15px;
+    line-height: 15px;
+    background-color: #e26237;
+    border-radius: 7px;
+}
+
+/* footer模块 */
+.footer-top {
+    height: 300px;
+    padding-top: 80px;
+    /* background-color: pink; */
+}
+
+.footer-top dl {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.footer-top dl a {
+    color: #999;
+    font-size: 14px;
+}
+
+.footer-top dl dt {
+    height: 50px;
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+
+}
+
+.footer-bottom {
+    height: 340px;
+    background-color: #333;
+}
+
+.customer dd,
+.us dd {
+    /* float: left; 
+    使用浮动比较麻烦，使用display: inline-block; 
+    接着给父元素添加text-align: center即可
+    */
+    display: inline-block;
+    width: 92px;
+    height: 92px;
+    /* background-color: skyblue; */
+    margin-right: 4px;
+}
+
+.customer dd a,
+.us dd a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f2f2f2;
+}
+
+/* 添加图标 */
+.customer dd a::before,
+.us dd a::before {
+    content: '';
+    display: inline-block;
+    width: 29px;
+    height: 28px;
+    margin-top: 22px;
+    background: url(../images/sprites.png) no-repeat;
+    /* 过渡效果 */
+    /* transition: all 0.5s; */
+}
+
+/* 提高权重，否则不生效 */
+.customer .zaixian a::before {
+    background-position: -250px -69px;
+}
+
+/* 鼠标经过a，变的是before */
+.customer .zaixian a:hover::before {
+    background-position: -205px -69px;
+}
+
+.customer .wenti a::before {
+    background-position: -350px -70px;
+}
+
+.customer .wenti a:hover::before {
+    background-position: -300px -70px;
+}
+
+.us .gzh a::before {
+    background-position: -250px -14px;
+    width: 37px;
+    height: 29px;
+}
+
+.us .gzh a:hover::before {
+    background-position: -205px -14px;
+}
+
+.us .weibo a::before {
+    background-position: -350px -14px;
+    width: 37px;
+    height: 29px;
+}
+
+.us .weibo a:hover::before {
+    background-position: -300px -14px;
+}
+
+.download dd {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.qrcode {
+    width: 116px;
+    height: 116px;
+    border: 1px solid #f2f2f2;
+    padding: 7px;
+}
+
+.qrcode img {
+    width: 100%;
+    height: 100%;
+}
+
+.down {
+    margin-left: 22px;
+    padding-top: 10px;
+    width: 103px;
+    text-align: left;
+    color: #999;
+    font-size: 14px;
+}
+
+.down a {
+    display: block;
+    margin-top: 20px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff !important;
+    background-color: #27ba9b;
+}
+
+.down a:hover {
+    background-color: #24caa6;
+}
+
+.hotline {
+    height: 190px;
+    border-left: 1px solid #f2f2f2;
+}
+
+.hotline dd p:nth-child(1) {
+    font-size: 22px;
+    color: #666;
+    margin-top: 15px;
+    height: 40px;
+}
+
+.hotline dd p:nth-child(2) {
+    font-size: 15px;
+    color: #999;
+}
+
+.xtx-service {
+    width: 1400px;
+    height: 175px;
+    margin: 0 auto;
+    border-bottom: 1px solid #434343;
+}
+
+.xtx-service a {
+    float: left;
+    width: 33.33%;
+    height: 174px;
+    text-align: center;
+    line-height: 174px;
+    font-size: 28px;
+    color: #fff;
+}
+
+/* 服务模块图片 */
+.xtx-service a::before {
+    content: '';
+    display: inline-block;
+    background-color: pink;
+    width: 58px;
+    height: 58px;
+    vertical-align: middle;
+    margin-right: 20px;
+    background: url(../images/sprites.png) no-repeat;
+}
+
+.xtx-service a:nth-child(1)::before {
+    background-position: -65px 0;
+}
+
+.xtx-service a:nth-child(2)::before {
+    background-position: -130px 0;
+}
+
+.xtx-service a:nth-child(3)::before {
+    background-position: 0 0;
+}
+
+.xtx-copyright {
+    padding-top: 40px;
+    text-align: center;
+    color: #999;
+    line-height: 32px;
+    font-size: 14px;
+
+}
+
+.xtx-copyright a {
+    color: #999;
+}
+
+.xtx-copyright a:hover {
+    color: #fff;
+}

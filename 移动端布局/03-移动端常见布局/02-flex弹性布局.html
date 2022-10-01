@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex弹性布局</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    div {
+        /* 给父级添加flex */
+        display: flex;
+        width: 80%;
+        height: 300px;
+        background-color: pink;
+
+        /* 默认的主轴是x轴 行 值是row, y轴就是侧轴，元素跟着主轴排列 */
+        /* flex-direction: row; */
+        /* 翻转 了解 */
+        /* flex-direction: row-reverse; */
+        /* 可以把主轴设置为y轴,那么x轴变成了侧轴 */
+        flex-direction: column;
+        /* 翻转 */
+        /* flex-direction: column-reverse; */
+
+
+    }
+
+    span {
+        width: 150px;
+        height: 150px;
+        background-color: skyblue;
+        margin-right: 5px;
+    }
+</style>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        margin: 200px auto;
+        background-color: pink;
+        /* 顺时针旋转45度 */
+        /* transform: rotate(45deg); */
+        /* 逆时针旋转45度  */
+        /* transform: rotate(-45deg); */
+        transition: all 2s;
+    }
+
+    div:hover {
+        /* 顺时针旋转45度 */
+        /* transform: rotate(45deg); */
+        /* 逆时针旋转45度  */
+        transform: rotate(-360deg);
+
+        border-radius: 50%;
+        background-color: skyblue;
+    }
+
+    p {
+        text-align: center;
+        line-height: 200px;
+    }
+</style>
+
+<body>
+    <div>
+        <p>碰我旋转哦</p>
+    </div>
+</body>
+
+</html>

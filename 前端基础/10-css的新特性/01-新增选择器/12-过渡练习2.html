@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡练习2</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        position: relative;
+        width: 234px;
+        height: 107px;
+        background-color: pink;
+        margin: 100px auto;
+    }
+
+    .box1,.box1::before,.box1::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 234px;
+        height: 107px;
+        transition: all 2s;
+    }
+
+      /* 显示对局环境的时候隐藏体验专区 */
+    .box1::before {
+        background-image: url(images/sprites.png);
+        background-position: 0px -351px;
+        opacity: 1;
+    }
+    .box1::after {
+        /* after 是体验专区部分 */
+        background-image: url(images/sprites.png);
+        background-position: 0px -461px; 
+        margin-left: -234px;
+        opacity: 0;
+    }
+
+    .box1:hover::before {
+        opacity: 0;
+        margin-left: 234px;
+    }
+
+    .box1:hover::after {
+        opacity: 1;
+        margin-left: 0;
+    } 
+</style>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+    </div>   
+
+</body>
+</html>

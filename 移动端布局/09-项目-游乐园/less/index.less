@@ -1,0 +1,156 @@
+// 导入less
+@import './base.less';
+@import './normalize.less';
+
+//变量 存储37.5rem
+@rootSize: 37.5rem;
+
+body {
+    background-color: #F0F0F0;
+}
+
+// 主体内容
+.main {
+    //给底部内容加上padding，防止footer固定定位遮盖内容
+    padding-bottom: (50 / @rootSize);
+
+    //banner
+    .banner {
+        height: (160 / @rootSize);
+
+        img {
+            height: (160 / @rootSize);
+        }
+
+
+    }
+
+    //活动标题
+    .title {
+        height: (40 / @rootSize);
+        line-height: (40 / @rootSize);
+        padding-left: (15 / @rootSize);
+
+        h4 {
+            font-size: (14 / @rootSize);
+            color: #3c3c3c;
+        }
+    }
+
+    //活动
+    .item {
+        margin-bottom: (10 / @rootSize);
+
+        //图片区域
+        .pic {
+            position: relative;
+            height: (160 / @rootSize);
+
+            img {
+                height: (160 / @rootSize);
+            }
+
+            //收藏图标
+            .iconfont {
+                position: absolute;
+                top: (15 / @rootSize);
+                right: (18 / @rootSize);
+                font-size: (24 / @rootSize);
+                color: rgb(192, 94, 94);
+            }
+
+            //活动进行中状态
+            .active {
+                position: absolute;
+                top: (-4 / @rootSize);
+                left: (15 / @rootSize);
+                width: (68 / @rootSize);
+                height: (29 / @rootSize);
+                background-image: url(../images/status_active.png);
+                background-size: cover;
+                font-size: (12 / @rootSize);
+                color: #fff;
+                text-align: center;
+                line-height: (25 / @rootSize);
+
+                // 活动设置截止状态
+                // .active.off{}  必须是active类且同时应用了off类
+                &.off {
+                    background-image: url(../images/status_default.png);
+                }
+            }
+
+            // .off {}
+        }
+
+        //文本区域
+        .txt {
+            padding: (10 / @rootSize) (15 / @rootSize);
+            background-color: #fff;
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+
+                h5 {
+                    font-size: (15 / @rootSize);
+                    width: (295 / @rootSize);
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: (15 / @rootSize);
+                    color: #FE6249;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                margin-top: (10 / @rootSize);
+
+                p {
+                    margin-right: (15 / @rootSize);
+                    font-size: (11 / @rootSize);
+                    color: #b4b4b4;
+
+                    i {
+                        font-size: (11 / @rootSize);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// footer部分
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    // 固定的盒子会脱标，需要给宽度
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: (50 / @rootSize);
+    background-color: #FECA49;
+
+    text-align: center;
+
+    a {
+        color: #D78B09;
+        font-size: (11 / @rootSize);
+
+        .iconfont {
+            font-size: (24 / @rootSize);
+        }
+
+        &.current {
+            color: #fff;
+        }
+    }
+
+}

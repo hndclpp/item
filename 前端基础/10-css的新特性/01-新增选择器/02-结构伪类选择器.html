@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ol,ul {
+        list-style: none;
+    }
+    /* 1. 选择ul里面的第一个孩子 ,注意空格*/
+    /* ul :first-child{
+        background-color: skyblue;
+    } */
+    ul li:first-child{
+        background-color: skyblue;
+    }
+    /* 选择ul里面的最后一个孩子 */
+    ul li:last-child{
+        background-color: skyblue;
+    }
+    /* 选择ul里面的第3个孩子  选择单个*/
+    /* ul li:nth-child(3) {
+        background-color: pink;
+    } */
+    /* even 表示偶数行，odd表示奇数行 */
+    ul li:nth-child(even) {
+        background-color: skyblue;
+    }
+    ul li:nth-child(odd) {
+        background-color: pink;
+    }
+
+    /* :nth-child(n) n表示从0开始，每次加1 里面必须是n,不能是其他的字母 */
+    ol li:nth-child(2n) {
+        background-color: pink;
+    }
+    ol li:nth-child(2n-1) {
+        /* 
+         m表示正整数
+         2n表示偶数
+         2n+1奇数
+         mn m的倍数
+         n+m 从第m个开始包含第m个，到最后
+         -n+m 前m个，包含第m个 */
+        background-color: skyblue;
+    }
+</style>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ol>
+</body>
+</html>

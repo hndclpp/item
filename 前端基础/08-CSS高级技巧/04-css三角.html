@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS三角制作</title>
+</head>
+<style>
+    /* 宽高必须为0 */
+    .box1 {
+        width: 0;
+        height: 0;
+        /* border: 1px solid pink; */
+        border-top: 10px solid pink;
+        border-bottom: 10px solid green;
+        border-left: 10px solid blue;
+        border-right: 10px solid red;
+    }
+    .box2 {
+        margin-top: 200;
+        width: 0;
+        height: 0;
+
+        /* 
+        照顾低版本浏览器的兼容性，高版本和移动端不用写
+        line-height: 0;
+        font-size: 0; 
+        */
+
+        border: 10px solid transparent;
+        border-left-color: pink;
+        border-right-color: skyblue;
+
+    }
+</style>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

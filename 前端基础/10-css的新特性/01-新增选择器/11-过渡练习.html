@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡练习1</title>
+</head>
+<style>
+    .bar {
+        width: 150px;
+        height: 16px;
+        border: 1px solid red;
+        border-radius: 8px;
+        padding: 1px;
+        transition: all 3s 0.2s;
+    }
+    .bar_in {
+        width: 15%;
+        height: 100%;
+        border-radius: 8px;
+        background-color: red;
+        transition: all 4s 0.2s;
+    }
+    .bar:hover {
+        border: 1px solid rgb(1, 102, 68);
+    }
+    .bar:hover .bar_in {
+        width: 100%;
+        background-color: rgb(1, 102, 68);
+    }
+
+</style>
+<body>
+    <div class="bar">
+        <div class="bar_in"></div>
+    </div>
+</body>
+</html>

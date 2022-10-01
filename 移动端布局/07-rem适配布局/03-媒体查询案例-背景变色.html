@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 一般按照从小到大 或者 从大到小的顺序 */
+
+    /* 宽度小于等于540px ，背景颜色为skyblue */
+    @media screen and (max-width: 540px) {
+        body {
+            background-color: skyblue;
+        }
+    }
+
+    /* 宽度541px ~ 971px之间 ，背景颜色为rgb(126, 179, 163) */
+    /* 
+     @media screen and (min-width:541px) and (max-width:970px) {
+        body {
+            background-color: rgb(126, 179, 163);
+        }
+    } 
+    */
+    @media screen and (min-width:541px) {
+        body {
+            background-color: rgb(126, 179, 163);
+        }
+    }
+
+    /* 宽度大于等于971px ，背景颜色为pink */
+    @media screen and (min-width: 971px) {
+        body {
+            background-color: pink;
+        }
+    }
+</style>
+
+<body>
+
+</body>
+
+</html>

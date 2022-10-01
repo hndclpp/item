@@ -1,0 +1,40 @@
+.header {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+
+    // 1. less嵌套 子元素直接写在父元素里面
+    a {
+        color: skyblue;
+
+        // &解析为父元素自身或父元素的伪类，没有&,则被解析为父选择器的后代
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+.nav {
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+
+    &::before {
+        content: "";
+        background-color: skyblue;
+    }
+
+    .logo {
+        background-color: green;
+    }
+}
+
+.test {
+    width: 300px;
+    height: 300px;
+
+    // 冒泡
+    @media screen and (max-width:500px) {
+        background-color: skyblue;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.先定义动画, 语法： @keyframes+动画名称， 动画序列:0%是开始状态， 100%是结束状态*/
+        @keyframes move {
+            0% {
+                transform: translateX(0px);
+            }
+
+
+            100% {
+                transform: translateX(1000px);
+            }
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 200px;
+            /* 2.调用动画*/
+            animation-name: move;
+            /* 3.持续时间,单位为秒*/
+            animation-duration: 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

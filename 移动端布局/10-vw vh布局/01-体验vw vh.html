@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 1vw = 1/100视口宽度 */
+            /* iPhone6/7/8视口宽度为375px,则此时1vw=375/100=3.75px, 40vw=40*3.75=150px,则这个盒子的宽高就是150px */
+            width: 40vw;
+            height: 40vw;
+            background-color: pink;
+        }
+
+        /* 1vh = 1/100视口宽度 */
+        /* iPhone6/7/8视口高度为667px,则此时1vw=667/100=6.67px, 40vw=40*6.67=266.8px,则这个盒子的宽高就是266.8px */
+        .box2 {
+            width: 40vh;
+            height: 40vh;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">vw</div>
+    <div class="box2">vh</div>
+</body>
+
+</html>

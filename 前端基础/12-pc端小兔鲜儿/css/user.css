@@ -1,0 +1,209 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.xtx-user {
+    margin: 20px auto 30px;
+}
+
+.xtx-user-left {
+    float: left;
+    width: 224px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.xtx-user-right {
+    float: right;
+    width: 996px;
+    background-color: #fff;
+}
+
+.xtx-user-left h4 {
+    font-weight: 600;
+    font-style: 18px;
+    padding: 25px 0 10px 52px;
+}
+
+.xtx-user-left .links {
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.xtx-user-left .links a {
+    position: relative;
+    display: block;
+    padding: 15px 0 15px 52px;
+    font-size: 14px;
+    color: #666;
+}
+
+.xtx-user-left .links a:hover {
+    color: #5cb99e;
+}
+
+.xtx-user-left .links a:hover::before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 35px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5cb99e;
+}
+
+.xtx-user-right {
+    background-color: #f5f5f5;
+}
+
+.xtx-user-right .user-info {
+    position: relative;
+    width: 996px;
+    height: 132px;
+    border-radius: 10px;
+    background-color: #7ab1a1;
+
+    margin-bottom: 20px;
+}
+
+.user-info .name {
+    float: left;
+    padding: 20px 0 20px 60px;
+}
+
+.user-info .name img {
+    width: 86px;
+    height: 86px;
+}
+
+.user-info .name span {
+    margin-left: 20px;
+    /* line-height: 86px; */
+    color: #fff;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.user-info .setting {
+    float: left;
+    text-align: center;
+}
+
+.user-info .setting img {
+    width: 32px;
+    height: 30px;
+}
+
+.user-info .setting p {
+    color: #fff;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.user-info .setting .other {
+    margin-left: 300px;
+    margin-top: 35px;
+}
+
+.user-info .setting li {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.user-info .setting .last {
+    margin-right: 50px;
+}
+
+.user-info .setting p:hover {
+    color: #5cb99e;
+}
+
+.xtx-dingdan {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.user-header {
+    width: 996px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.user-header h3 {
+    float: left;
+    margin-left: 12px;
+}
+
+.goods-info {
+    margin-top: 50px;
+}
+
+.goods-info table {
+    text-align: center;
+    /* border: 1px solid #e8e8e8; */
+}
+
+.goods-info .status,
+.goods-info .price {
+    color: #e05e30;
+}
+
+.goods-info .desc,
+.goods-info .wuliu {
+    font-size: 14px;
+    color: #999;
+}
+
+.goods-info img {
+    width: 107px;
+    height: 107px;
+}
+
+.goods-info .money {
+    display: inline-block;
+    width: 100px;
+    height: 31px;
+    line-height: 31px;
+    background-color: #5cb99e;
+    color: #fff;
+}
+
+.goods-info .wuliu:hover {
+    color: #5cb99e;
+}
+
+.goods-info li {
+    display: block;
+}
+
+.goods-info li:hover {
+    background-color: #5cb99e;
+    color: #fff;
+}
+
+.goods-info .selected {
+    background-color: #5cb99e;
+    color: #fff;
+}
+
+.xtx-collect {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.xtx-collect img {
+    width: 154px;
+    height: 154px;
+}
+
+
+.xtx-collect ul li {
+    text-align: center;
+    display: inline-block;
+    padding-left: 10px;
+    width: 242px;
+    height: 250px;
+    margin-top: 50px;
+}

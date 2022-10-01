@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* nth-child会把所有盒子都排列序号 */
+    /* 执行的时候先看第一个孩子 <p>光头强</p>  ，
+    又看第一个孩子的标签p和div标签不匹配
+    最终匹配不上，没有满足条件的孩子可以选出来*/
+    section div:nth-child(1) {
+        background-color: red;
+    }
+
+    /* nth-of-type 会把指定子元素div的盒子排列序号，之后看nth-of-type(1)是第几个孩子*/
+    section div:nth-of-type(1) {
+        background-color: skyblue;
+    }
+</style>
+<body>
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+</body>
+</html>

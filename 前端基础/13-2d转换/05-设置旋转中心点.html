@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin: 200px auto;
+        transition: all 2s;
+        /* 可以是方位名词 ：上下左右和中心 */
+        /* transform-origin: left top; */
+        /* 可以是百分百 此处相当于 transform-origin: center center */
+        transform-origin: 50% 50%;
+        /* 也可以是像素点 */
+        /* transform-origin: 20px 60px; */
+    }
+
+    div:hover {
+        transform: rotate(360deg);
+        background-color: skyblue;
+    }
+</style>
+
+<body>
+    <div></div>
+</body>
+
+</html>

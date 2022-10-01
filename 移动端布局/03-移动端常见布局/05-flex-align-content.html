@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex弹性布局</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    div {
+        /* 给父级添加flex */
+        display: flex;
+        width: 800px;
+        height: 400px;
+        margin: 20px auto;
+        background-color: pink;
+        flex-wrap: wrap;
+        /* 因为有了换行 此时侧轴上控制子元素的对齐方式用 align-content 适用于多行，单行无效*/
+        /* align-content: flex-start; */
+        /* align-content: center; */
+        /* align-content: space-between; */
+        /* align-content: space-around; */
+
+        /* align-items 适用于单行，align-content 适用于多行，都是侧轴  没有出现换行就是单行*/
+        /* align-content: center; */
+        /* align-items: center; */
+
+
+    }
+
+    div:nth-child(3) {
+        flex-direction: column;
+    }
+
+    span {
+        width: 150px;
+        height: 100px;
+        background-color: skyblue;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <div>
+        <span>这个是多行</span>
+        <span>主轴是X</span>
+        <span>出现了换行</span>
+        <span>4</span>
+        <span>在这换行咯</span>
+        <span>6</span>
+    </div>
+    <div>
+        <span>这个是单行</span>
+        <span>主轴是X</span>
+        <span></span>
+    </div>
+
+    <div>
+        <span>这个也是单行</span>
+        <span>只不过主轴是Y</span>
+        <span></span>
+    </div>
+</body>
+
+</html>

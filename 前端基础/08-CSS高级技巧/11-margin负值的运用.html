@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin负值的运用</title>
+</head>
+<style>
+    .box {
+        position: relative;
+        float: left;
+        width: 150px;
+        height: 300px;
+        border: 1px solid black;
+        /* 去除两个盒子重叠线条加粗的情况 */
+        margin-left: -1px;
+    }
+    .box1 {
+        background-color: pink;
+    }
+    .box2 {
+        background-color: skyblue;
+    }
+    .box3 {
+        background-color: gainsboro;
+    }
+    .box4 {
+        background-color: peachpuff;
+    }
+    .box5 {
+        background-color: powderblue;
+    }
+    .box:hover {
+        /* 1.如果box没定位，则使用相对定位压住负值的边框 */
+        /* position: relative; */
+        /* 2. 如果box有定位,则使用z-index提高层级 */
+        z-index: 1;
+        border: 1px solid red;
+    }
+</style>
+<body>
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+</body>
+</html>

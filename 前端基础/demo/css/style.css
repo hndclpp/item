@@ -1,0 +1,33 @@
+/* 去除常见标签默认的 margin 和 padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body,
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    position: relative;
+    background: url(../images/cloud.jpg) no-repeat top center/cover fixed;
+}
+
+.info {
+    position: absolute;
+    margin: 200px auto;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
