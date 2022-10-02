@@ -1,0 +1,30 @@
+//out: ./demo.css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+// iPhone6/7/8视口宽度为375px
+@vw: 3.75vw;
+@vh: 6.67vh;
+
+.box {
+    // 68*29 ---> ?vw
+    width: (68 / @vw);
+    height: (29 / @vw);
+    background-color: pink;
+}
+
+.box2 {
+    // 68*29 ---> ?vh
+    width: (68 / @vh);
+    height: (29 / @vh);
+    background-color: skyblue;
+}
+
+.box3 {
+    width: (68 / @vw);
+    height: (29 / @vh);
+    background-color: purple;
+}
